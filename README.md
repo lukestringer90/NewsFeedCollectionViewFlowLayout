@@ -3,10 +3,67 @@ NewsFeedCollectionViewLayout
 
 UICollectionViewFlowLayout subclass mimicking the Zite/Flipboard layout style of news feed articles.
 
-## Screens
-
 ![layout_a](https://raw.github.com/lukestringer90/NewsFeedCollectionViewLayout/master/Screens/layout_a.png)
 ![layout_c](https://raw.github.com/lukestringer90/NewsFeedCollectionViewLayout/master/Screens/layout_c.png)
+
+## Usage
+To use the flow layout, setup a collection view as follows:
+
+```
+self.flowLayout = [[NewsFeedCollectionViewFlowLayout alloc] init];
+self.flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+self.flowLayout.minimumInteritemSpacing = 0.0;
+self.flowLayout.minimumLineSpacing = 0.0f;
+
+// Here we setup the layout configurations for the sections we want.
+// Each section corresponds to a page as we have turned on paging for the collectionview.
+// The number of elements in the sectionLayoutConfigurations array specifies how many pages there are
+// and what configuration of cells should be used for that section and page.
+self.flowLayout.sectionLayoutConfigurations = @[
+												@(SectionLayoutConfigurationA),
+                                              	@(SectionLayoutConfigurationB),
+                                              	@(SectionLayoutConfigurationC),
+                                              	@(SectionLayoutConfigurationD)
+                                              	];
+
+CGRect frame = <frame setup>
+self.collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:self.flowLayout];
+```
+
+To get the number of section and items for the collection view using the layout, override like so:
+
+```
+#pragma mark - UICollectionViewDataSource
+- (NSInteger )numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return [self.flowLayout numberOfSections];
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return [self.flowLayout numberOfItemsInSection:section];
+}
+
+```
+
+To get the right size for an item in the collection view using the layout, override like so:
+
+```
+#pragma mark - UICollectionViewDelegateFlowLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout*)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    // Get the size from the NewsFeedCollectionViewFlowLayout instance (a subclass of UICollectionViewFlowLayout)
+    return [collectionViewLayout layoutAttributesForItemAtIndexPath:indexPath].size;
+    
+}
+```
+
+
+## Todo
+
+* Change the way section layouts are defined via classes (subclassing and overing a layout method) rather than an enum used by NewsFeedCollectionViewFlowLayout.
+* Add paging controls.
+* Unit tests.
 
 ## Licence
 This code is distributed under the terms and conditions of the MIT license.
