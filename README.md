@@ -16,7 +16,7 @@ self.flowLayout.minimumInteritemSpacing = 0.0;
 self.flowLayout.minimumLineSpacing = 0.0f;
 
 // Here we setup the layout configurations for the sections we want.
-// Each section corresponds to a page as we have turned on paging for the collectionview.
+// Each section corresponds to a page as we have turn paging on for the collectionview.
 // The number of elements in the sectionLayoutConfigurations array specifies how many pages there are
 // and what configuration of cells should be used for that section and page.
 self.flowLayout.sectionLayoutConfigurations = @[
@@ -28,6 +28,9 @@ self.flowLayout.sectionLayoutConfigurations = @[
 
 CGRect frame = <frame setup>
 self.collectionView = [[UICollectionView alloc] initWithFrame:frame collectionViewLayout:self.flowLayout];
+self.collectionView .pagingEnabled = YES;
+self.collectionView .delegate = self;
+self.collectionView .dataSource = self;
 ```
 
 To get the number of section and items for the collection view using the layout, override like so:
