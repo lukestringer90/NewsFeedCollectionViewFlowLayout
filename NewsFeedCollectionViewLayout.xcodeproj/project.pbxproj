@@ -16,13 +16,13 @@
 		A32AB123177F97B20027BFF7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A32AB122177F97B20027BFF7 /* Default.png */; };
 		A32AB125177F97B20027BFF7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32AB124177F97B20027BFF7 /* Default@2x.png */; };
 		A32AB127177F97B20027BFF7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A32AB126177F97B20027BFF7 /* Default-568h@2x.png */; };
-		A32AB12A177F97B20027BFF7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB129177F97B20027BFF7 /* ViewController.m */; };
-		A32AB12D177F97B20027BFF7 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A32AB12B177F97B20027BFF7 /* ViewController.xib */; };
+		A32AB12A177F97B20027BFF7 /* NewsFeedCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB129177F97B20027BFF7 /* NewsFeedCollectionViewController.m */; };
 		A32AB135177F97B20027BFF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB134177F97B20027BFF7 /* SenTestingKit.framework */; };
 		A32AB136177F97B20027BFF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB110177F97B10027BFF7 /* UIKit.framework */; };
 		A32AB137177F97B20027BFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB112177F97B10027BFF7 /* Foundation.framework */; };
 		A32AB13F177F97B20027BFF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32AB13D177F97B20027BFF7 /* InfoPlist.strings */; };
 		A32AB142177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB141177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m */; };
+		A32AB14D177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +49,16 @@
 		A32AB122177F97B20027BFF7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A32AB124177F97B20027BFF7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A32AB126177F97B20027BFF7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A32AB128177F97B20027BFF7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A32AB129177F97B20027BFF7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A32AB12C177F97B20027BFF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A32AB128177F97B20027BFF7 /* NewsFeedCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFeedCollectionViewController.h; sourceTree = "<group>"; };
+		A32AB129177F97B20027BFF7 /* NewsFeedCollectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCollectionViewController.m; sourceTree = "<group>"; };
 		A32AB133177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewsFeedCollectionViewLayoutTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32AB134177F97B20027BFF7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		A32AB13C177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NewsFeedCollectionViewLayoutTests-Info.plist"; sourceTree = "<group>"; };
 		A32AB13E177F97B20027BFF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A32AB140177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFeedCollectionViewLayoutTests.h; sourceTree = "<group>"; };
 		A32AB141177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCollectionViewLayoutTests.m; sourceTree = "<group>"; };
+		A32AB14B177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				A32AB116177F97B10027BFF7 /* NewsFeedCollectionViewLayout */,
-				A32AB13A177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests */,
 				A32AB10F177F97B10027BFF7 /* Frameworks */,
 				A32AB10E177F97B10027BFF7 /* Products */,
 			);
@@ -119,10 +119,12 @@
 			children = (
 				A32AB11F177F97B10027BFF7 /* AppDelegate.h */,
 				A32AB120177F97B20027BFF7 /* AppDelegate.m */,
-				A32AB128177F97B20027BFF7 /* ViewController.h */,
-				A32AB129177F97B20027BFF7 /* ViewController.m */,
-				A32AB12B177F97B20027BFF7 /* ViewController.xib */,
+				A32AB128177F97B20027BFF7 /* NewsFeedCollectionViewController.h */,
+				A32AB129177F97B20027BFF7 /* NewsFeedCollectionViewController.m */,
+				A32AB14B177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.h */,
+				A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */,
 				A32AB117177F97B10027BFF7 /* Supporting Files */,
+				A32AB13A177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests */,
 			);
 			path = NewsFeedCollectionViewLayout;
 			sourceTree = "<group>";
@@ -149,7 +151,7 @@
 				A32AB13B177F97B20027BFF7 /* Supporting Files */,
 			);
 			path = NewsFeedCollectionViewLayoutTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		A32AB13B177F97B20027BFF7 /* Supporting Files */ = {
 			isa = PBXGroup;
@@ -235,7 +237,6 @@
 				A32AB123177F97B20027BFF7 /* Default.png in Resources */,
 				A32AB125177F97B20027BFF7 /* Default@2x.png in Resources */,
 				A32AB127177F97B20027BFF7 /* Default-568h@2x.png in Resources */,
-				A32AB12D177F97B20027BFF7 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +273,8 @@
 			files = (
 				A32AB11D177F97B10027BFF7 /* main.m in Sources */,
 				A32AB121177F97B20027BFF7 /* AppDelegate.m in Sources */,
-				A32AB12A177F97B20027BFF7 /* ViewController.m in Sources */,
+				A32AB12A177F97B20027BFF7 /* NewsFeedCollectionViewController.m in Sources */,
+				A32AB14D177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,14 +303,6 @@
 				A32AB11A177F97B10027BFF7 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		A32AB12B177F97B20027BFF7 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A32AB12C177F97B20027BFF7 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 		A32AB13D177F97B20027BFF7 /* InfoPlist.strings */ = {
