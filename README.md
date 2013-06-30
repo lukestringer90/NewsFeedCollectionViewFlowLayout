@@ -64,7 +64,8 @@ To get the right size for an item in the collection view using the layout, overr
 
 ## Todo
 
-* Change the way section layouts are defined via classes (subclassing and overing a layout method) rather than an enum used by NewsFeedCollectionViewFlowLayout.
+* Change the way section layouts are defined via classes; subclassing and overing a layout method or something. Currently layouts are defined with the SectionLayoutConfiguration enum, and are hardcoded.
+* Comments explaining the visuals of the provided layouts.
 * Add paging controls.
 * Unit tests.
 
