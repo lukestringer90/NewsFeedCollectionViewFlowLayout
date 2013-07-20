@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3063282179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A3063281179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.m */; };
 		A32AB111177F97B10027BFF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB110177F97B10027BFF7 /* UIKit.framework */; };
 		A32AB113177F97B10027BFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB112177F97B10027BFF7 /* Foundation.framework */; };
 		A32AB115177F97B10027BFF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB114177F97B10027BFF7 /* CoreGraphics.framework */; };
@@ -22,7 +23,6 @@
 		A32AB137177F97B20027BFF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A32AB112177F97B10027BFF7 /* Foundation.framework */; };
 		A32AB13F177F97B20027BFF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A32AB13D177F97B20027BFF7 /* InfoPlist.strings */; };
 		A32AB142177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB141177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m */; };
-		A32AB14D177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3063280179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewsFeedCollectionViewFlowLayout.h; path = src/NewsFeedCollectionViewFlowLayout.h; sourceTree = SOURCE_ROOT; };
+		A3063281179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewsFeedCollectionViewFlowLayout.m; path = src/NewsFeedCollectionViewFlowLayout.m; sourceTree = SOURCE_ROOT; };
 		A32AB10D177F97B10027BFF7 /* NewsFeedCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsFeedCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32AB110177F97B10027BFF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A32AB112177F97B10027BFF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,8 +59,6 @@
 		A32AB13E177F97B20027BFF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A32AB140177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsFeedCollectionViewLayoutTests.h; sourceTree = "<group>"; };
 		A32AB141177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCollectionViewLayoutTests.m; sourceTree = "<group>"; };
-		A32AB14B177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 				A32AB120177F97B20027BFF7 /* AppDelegate.m */,
 				A32AB128177F97B20027BFF7 /* NewsFeedCollectionViewController.h */,
 				A32AB129177F97B20027BFF7 /* NewsFeedCollectionViewController.m */,
-				A32AB14B177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.h */,
-				A32AB14C177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m */,
+				A3063280179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.h */,
+				A3063281179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.m */,
 				A32AB117177F97B10027BFF7 /* Supporting Files */,
 				A32AB13A177F97B20027BFF7 /* NewsFeedCollectionViewLayoutTests */,
 			);
@@ -274,7 +274,7 @@
 				A32AB11D177F97B10027BFF7 /* main.m in Sources */,
 				A32AB121177F97B20027BFF7 /* AppDelegate.m in Sources */,
 				A32AB12A177F97B20027BFF7 /* NewsFeedCollectionViewController.m in Sources */,
-				A32AB14D177F98900027BFF7 /* NewsFeedCollectionViewFlowLayout.m in Sources */,
+				A3063282179B0CBE00369F42 /* NewsFeedCollectionViewFlowLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +449,7 @@
 				A32AB147177F97B20027BFF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A32AB148177F97B20027BFF7 /* Build configuration list for PBXNativeTarget "NewsFeedCollectionViewLayoutTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +458,7 @@
 				A32AB14A177F97B20027BFF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
